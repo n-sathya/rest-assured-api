@@ -1,0 +1,159 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-11T07:27:35.310Z",
+        "line": 15,
+        "name": "Verify addPlaceApi using http Post",
+        "description": "",
+        "id": "validate-place-api;verify-addplaceapi-using-http-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1989680200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user has payload ready with \"S101, west cross street\" \"English\" \"sami\" \"512-57-8090\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "S101, west cross street",
+                  "offset": 29
+                },
+                {
+                  "val": "English",
+                  "offset": 55
+                },
+                {
+                  "val": "sami",
+                  "offset": 65
+                },
+                {
+                  "val": "512-57-8090",
+                  "offset": 72
+                }
+              ],
+              "location": "StepDefinition.PlaceApi.user_has_payload_ready_with_something_something_something_something(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3332174400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls \"AddPlaceApi\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.PlaceApi.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1994000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user gets a statuscode of \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinition.PlaceApi.user_gets_a_statuscode_of(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"Status\" is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.PlaceApi.something_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "\"Scope\" is \"App\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Scope",
+                  "offset": 1
+                },
+                {
+                  "val": "App",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.PlaceApi.something_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2810131600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify place_Id created maps to \"sami\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sami\"",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinition.PlaceApi.verify_place_id_created_maps_to(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Place API",
+    "description": "",
+    "id": "validate-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/AddPlace.feature",
+    "tags": []
+  }
+]
